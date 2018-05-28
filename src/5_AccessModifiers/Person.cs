@@ -4,10 +4,10 @@ namespace _5_AccessModifiers
 {
     partial class Program
     {
-        // Make sure you classes are always in a valid state....
+        // Make sure your classes are always in a valid state....
         public class Person
         {
-            // So hence fort note that fields ought be oly visible on its own class ONLy. Also note that by conventions felds should be named starting with underscore and then camel case naming convention as shown below:
+            // So hence fort note that fields ought be only visible on its own class ONLy. Also note that by conventions felds should be named starting with underscore and then camel case naming convention as shown below:
 
             private DateTime _dateOfBirth;
 
@@ -40,7 +40,21 @@ namespace _5_AccessModifiers
             public DateTime DateOfBirthAgain { get; set; }  // Added Again to the name just to deferenciate it from the above dateOfBirth
 
 
-            //NB So properties ought not to be auto - implemented eg Age, Why beacause we need to logic to get and set their values as shown below:
+            //I added this to learn how to write the un auto implemented version of properties.
+            public DateTime Emeksense
+            {
+                get
+                {
+                    return _dateOfBirth;
+                }
+                set
+                {
+                    _dateOfBirth = value ;
+                }
+            }
+
+
+            //NB Some properties ought not to be auto - implemented eg Age, Why because we need to logic to get and set their values as shown below:
 
             public int Age
             {

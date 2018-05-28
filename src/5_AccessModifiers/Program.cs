@@ -21,6 +21,10 @@ namespace _5_AccessModifiers
             Person person = new Person();
             person.SetDateOfBirth(new DateTime(1989,09,15));
             Console.WriteLine(person.GetDateOfBirth());
+
+            var myAge = person.Age;
+            Console.WriteLine(myAge);
+            Console.WriteLine();
             Console.WriteLine(person.Age);
 
 

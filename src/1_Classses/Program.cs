@@ -11,10 +11,9 @@ namespace _1_Classses
         //Person class's field
         public string Name;
 
-        //Person class's Method by name Instroduction
+        //Person class's Method by name Introduction
         public void Introduction(string to)
         {
-
             Console.WriteLine("Hi {0}, I am {1}", to , Name);
         }
 

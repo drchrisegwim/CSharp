@@ -9,8 +9,8 @@ namespace _4_Fields
             public int Id;
             public string Name;
 
-            // Use readonly keword on the field below to avoid someone acidentally reinitialize the value the list item
-            public List<Order> Orders;
+            // Use readonly keword on the field below to avoid someone acidentally reinitialize the value of the list item
+            public  List<Order> Orders;
 
             public Customer()
             {
@@ -32,6 +32,8 @@ namespace _4_Fields
             public void Promote()
             {
                 Orders = new List<Order>();
+
+                
 
                 // ...
             }

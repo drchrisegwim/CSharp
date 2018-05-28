@@ -26,7 +26,7 @@ namespace _3_Methods
             var number = 0;
             var result = int.TryParse("eme", out number);
             if (result)
-                Console.WriteLine(result);
+                Console.WriteLine(number);
 
             Console.ReadLine();
         }

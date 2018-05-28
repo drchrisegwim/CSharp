@@ -20,7 +20,6 @@ namespace _4_Fields
             Console.WriteLine(customer.Orders.Count);
 
 
-
             Console.ReadLine();
         }
     }
